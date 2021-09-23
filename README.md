@@ -21,3 +21,23 @@ I want Unit to be as easy to use as possible. I also want Unit to be as modular 
 
 ## Installation
 To use Unit, download this repository, look in the Unit-UI-main folder that was downloaded, archive the Unit.codea folder as a ZIP file, and then open that ZIP file in Codea on your iOS/iPadOS device. Now that it is in your project library, you can make a new project and add the Unit project as a dependency. Put Unit.setup() into the setup() function, put Unit.draw() into the draw function, and do likewise for the touched(touch), sizeChanged(w, h), hover(gesture), scroll(gesture), and keyboard(key) functions. Now, you can start defining your first screen wherever you like!
+
+***
+## License
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/calm-dolphin">
+    <span property="dct:title">calm-dolphin</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">Unit-UI</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="https://github.com/calm-dolphin">
+  United States</span>.
+</p>
