@@ -3,13 +3,14 @@
 -- The "Defaults" tab includes bits of code that are not vital to Unit, but may be useful.
 -- Technically, you could delete this entire tab and run Unit entirely on custom functions.
 -- However, you should only do that if you have very specific needs and know what you are doing.
---[
+
 Unit.color = {
     invisible = color(0, 0, 0, 0),
     white = color(255, 255, 255, 255),
     grey = color(128), gray = color(128),
     lightgrey = color(196), lightgray = color(196),
     darkgrey = color(64), darkgray = color(64),
+    -- As you can see, I accommodate both spellings of grey/gray here ;)
     black = color(0, 0, 0),
     red = color(255, 0, 0),
     green = color(0, 255, 0),
@@ -61,6 +62,7 @@ Unit.defaultSetUp = function()
             return true
         end
     end
+    -- Here's the default screen that shows if you do not define a screen.
     Unit.defaultScreen2 = Unit.screen({name="Unit.defaultScreen2", fill=Unit.color.leaf}, {
         Unit.button({text="Back",fill=Unit.color.sky,x=0.1,y=0.9,w=0.15,h=0.15,highlight={fill=Unit.color.black},
             frameManager=backManager{x=70,y=70},touchEvents={Unit.te.onTap(function()Unit.defaultScreen:set()end)}}),
