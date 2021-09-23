@@ -2,7 +2,7 @@
 
 -- This tab contains the Unit.button class, which is simply a touch-sensitive version of Unit.textPanel.
 -- The init method requires a table of touch event functions, and can optionally include a highlight style and children.
--- Don't ask me why there isn't a class for buttons without text.
+-- Don't ask me why there isn't a class for buttons without text. Buttons have got to have SOMETHING on them, right?
 
 Unit.button = class(Unit.textPanel)
 
@@ -45,6 +45,7 @@ function Unit.button:highlight(bool)
     if bool then self.style = self.highlightStyle else self.style = self.defaultStyle end
 end
 
+-- This is the uber-spooky screen that appears if you deleted Defaults.lua and still refused to define a screen!! :O
 Unit.noScreen = Unit.screen({},{
     Unit.textPanel({w=1,text="UI error:\nNo screen defined",textFill=color(255),size=20})
 })
