@@ -23,6 +23,12 @@ I want Unit to be as easy to use as possible. I also want Unit to be as modular 
 To use Unit, download this repository, look in the Unit-UI-main folder that was downloaded, archive the Unit.codea folder as a ZIP file, and then open that ZIP file in Codea on your iOS/iPadOS device. Now that it is in your project library, you can make a new project and add the Unit project as a dependency. Put Unit.setup() into the setup() function, put Unit.draw() into the draw function, and do likewise for the touched(touch), sizeChanged(w, h), hover(gesture), scroll(gesture), and keyboard(key) functions. Now, you can start defining your first screen wherever you like!
 
 ***
+
+## Where do I start?
+For now, you'll have to examine the code. I haven't the time to write documentation at the moment. It's not a super complex project at the moment, though.
+
+***
+
 ## License
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
