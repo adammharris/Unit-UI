@@ -19,7 +19,7 @@ function Unit.panel:init(p, children)
     }
     self.rawFrame = {} -- will contain the actual x, y, w, and h values for drawing
     self.frameManager = p.frameManager
-    if self.frameManager == nil then 
+    if self.frameManager == nil then -- set default frame manager
         self.frameManager = Unit.style.frameManager
     end
     self.layer = p.layer or Unit.style.layer -- determines the order in which panels are drawn
@@ -127,10 +127,9 @@ end
 
 
 Unit.screen = class(Unit.panel)
--- This is a class that is so simple that it didn't even deserve its own tab.
--- It acts like a panel that is the width and height of the screen, and is a parent to all on-screen UI elements.
+-- A screen acts like a panel that is the width and height of the screen, and is a parent to all on-screen UI elements.
 -- It is possible to define multiple screens and switch between them with the Unit.screen.set method.
--- Touch, draw, and sizeChanged functions are only called on the current screen to save resources.
+-- Touch, draw, and sizeChanged functions are only called on the *current* screen to save resources.
 
 function Unit.screen:init(panelp, children, settings)
     assert(panelp and children, "Error with screen parameters!")
