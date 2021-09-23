@@ -6,6 +6,7 @@
 
 Unit.toucher = class()
 Unit.tempBank = {} -- Used to bypass the need to access the incompletely initialized parentScreen.
+-- Probably a better way to do all this
 
 function Unit.addToucher(target, events, priority, share)
     local t = Unit.toucher(target, events, priority, share)
@@ -36,7 +37,7 @@ function Unit.toucher:touched(touch)
             self.touches[touch.id] = true
         end
     end
-    if self.target.children then -- If child is hit as well, touch only the child
+    if self.target.children then -- If child is hit as well, touch only the child (that sounds weird out of context)
         for k,v in pairs(self.target.children) do
             if v.hit then if v:hit(touch) then return end end
         end 
