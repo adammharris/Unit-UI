@@ -5,7 +5,6 @@
 	<key>Buffer Order</key>
 	<array>
 		<string>Main</string>
-		<string>Notes</string>
 		<string>Unit</string>
 		<string>Panel</string>
 		<string>Toucher</string>
