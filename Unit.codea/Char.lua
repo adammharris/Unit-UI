@@ -1,4 +1,6 @@
 -- Char.lua
+-- IMPORTANT: This file is currently too early in development to use.
+-- Eventually, rich text editing will be possible in Codea apps.
 
 -- This tab handles the drawing and defining of rich text with the Unit.char and Unit.label classes.
 -- It also allows the attributes of each character to be defined, which opens up many possibilities.
