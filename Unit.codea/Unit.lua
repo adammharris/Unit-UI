@@ -1,6 +1,6 @@
 -- Unit.lua
 
--- This tab contains the Unit table, setup function, and draw function, as well as multiple auxillary code pieces.
+-- This file contains the Unit table, setup function, and draw function, as well as multiple auxillary code pieces.
 Unit = {
     version = 1.01,
     ticks = 0,
@@ -113,19 +113,5 @@ function Unit.scroll(gesture) for k,t in ipairs(Unit.currentScreen.touchers) do 
 function Unit.keyboard(key) end -- unused
 
 Unit.helpString = [[
-         ---------
-         Unit Help
-         ---------
-
-Welcome to Unit!
-Version: ]]..Unit.version..[[
-
-
-Unit is a UI system for Codea that is designed to be powerful and easy to use, as well as easy on the device's resources.
-
-To use Unit, call Unit.setup() in the setup function, and call Unit.draw() in the draw function. If you use the Unit template, they are already there for your convenience.
-
-To see Unit from a developer's perspective, call Unit.setup{DEBUG=true} in the setup function. Unit.setup() can take several parameters in order to adjust Unit to your liking.
-
-For further explanation, examine Unit's code closely.]]
+]]
 function Unit.help() print(Unit.helpString) end
