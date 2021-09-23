@@ -29,6 +29,17 @@ For now, you'll have to examine the code. I haven't the time to write documentat
 
 ***
 
+## Screenshots!
+Here is Unit running on an iPad Pro. (The transparent grey circles are marking the places where my fingers are touching. That's a debug feature that is disabled by default, kind of like the performance metrics on the left. This is the screen that is shown when no screen is defined, as the bottom banner indicates.)
+
+![unit-ipad](https://user-images.githubusercontent.com/86483669/134458162-79acb9c2-2acc-4e20-93a0-279af0ea5989.jpeg)
+
+Here is Unit running on an iPhone. Notice how the panels are scaled differently according to the screen size. This is the behavior of the default frameManager. You can swap out that function for another one if you like.
+
+![unit-iphone](https://user-images.githubusercontent.com/86483669/134458182-40d6f45d-2527-4c7d-8b3f-ebfa9f6f3425.jpeg)
+
+***
+
 ## License
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
