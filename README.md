@@ -14,18 +14,19 @@ Yeah, this repository is not MyUi. MyUi was a terribly inefficient library. But 
 I want Unit to be as easy to use as possible. I also want Unit to be as modular as possible. I also want Unit to be as performant as possible. I also— wait, this merits a bullet-point list, doesn't it?
 - **Easy to use:** I made my own UI library because all the others were a pain to use. Unit should be the shortest distance from a Codea programmer and a great UI. To accomplish this, I need to have great default values for everything, as well as an extremely intuitive implementation for everything. For example, parent-child relationships between UI elements can be represented as nested tables.
 - **Modular:** Unit is centered around the Panel class, and nearly all its methods are swappable, so you can make panels behave exactly the way you want. In addition to the default values, there are also many useful functions defined to allow for a nice amount of hot-swappablity out of the box.
-- **Performant:** Remember when I said that Unit "should be the shortest distance from a Codea programmer and a great UI"? Well, Unit should also be the shortest distance between the hardware and all the tasks that need to be performed for a great user experience. There cannot be any redundancy! Every line of code that is run needs to serve a purpose.
+- **Performant:** Remember when I said that Unit "should be the shortest distance from a Codea programmer and a great UI"? Well, Unit should also be the shortest distance between the hardware and all the tasks that need to be performed for a great user experience. I mean, we are using Lua inside Codea inside iOS, so there is only so much I can do. But still! There cannot be any redundancy! Every line of code that is run needs to serve a purpose.
 - **Feature-packed:** Unit needs to be able to do everything. For example, one of my loftier goals is to implement text editing for non-monospaced fonts. That's not implemented yet, but you get my point.
 
 ***
 
 ## Installation
+(For more information, see the Wiki page 'Installation')
 To use Unit, download this repository, look in the Unit-UI-main folder that was downloaded, archive the Unit.codea folder as a ZIP file, and then open that ZIP file in Codea on your iOS/iPadOS device. Now that it is in your project library, you can make a new project and add the Unit project as a dependency. Put Unit.setup() into the setup() function, put Unit.draw() into the draw function, and do likewise for the touched(touch), sizeChanged(w, h), hover(gesture), scroll(gesture), and keyboard(key) functions. Now, you can start defining your first screen wherever you like!
 
 ***
 
 ## Where do I start?
-For now, you'll have to examine the code. I haven't the time to write documentation at the moment. It's not a super complex project at the moment, though.
+For now, you'll have to examine the code. I haven't the time to write documentation at the moment. (WIP in the Wiki on this Github page.) It's not a super complex project at the moment, though.
 
 ***
 
